@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, styled } from '@mui/material';
 
 {/* Create a styled button with custom styles*/}    
-const StyledButton = styled(Button)(({ theme }) => ({
+const StyledButton =  styled(Button)(({ theme }) => ({
     backgroundColor: 'gray',         
     color: theme.palette.primary.main,            
     '&:hover': {                     

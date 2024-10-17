@@ -1,35 +1,30 @@
-import { AppBar, Avatar, Badge, Box, styled, Toolbar, Typography } from '@mui/material'
-import React from 'react'
+import { AppBar, Avatar, Badge, Box, IconButton, styled, Toolbar, Typography } from '@mui/material';
+import React from 'react';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-const StyledToolBar =styled(Toolbar)({
-display:'flex',
-justifyContent:'space-between'
+import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary'; // Add the gallery icon
 
-})
+const StyledToolBar = styled(Toolbar)({
+  display: 'flex',
+  justifyContent: 'space-between'
+});
 
-const NavBar = () => {
+const NavBar = ({ onGalleryClick }) => { // Accept a prop for handling gallery icon click
   return (
-    <AppBar position='sticky'>
-        <StyledToolBar>
-            <Typography variant='h5'>Tours</Typography>
-            <Box sx={{
-            display:'flex',alignItems:'center', gap:'20px'  }}> 
-            <Badge badgeContent={4} color="secondary">
-            <MailIcon color="action" />
-            </Badge>
-            <Badge badgeContent={4} color="error">
-            <NotificationsActiveIcon color='action'/>
-            </Badge>
-            <Avatar alt="Remy Sharp" src="https://i.pravatar.cc/300" />
-            </Box>
-        </StyledToolBar>
-
-
+    <AppBar position='sticky' sx={{ mb: 2 }}>
+      <StyledToolBar>
+        <Typography variant='h5'>Tours</Typography>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <Badge badgeContent={4} color="secondary"><MailIcon color="action" /></Badge>
+          <Badge badgeContent={4} color="error"><NotificationsActiveIcon color='action' /></Badge>
+          <IconButton onClick={onGalleryClick} sx={{ display: { xs: 'block', sm: 'none' } }}> {/* Show on small screens */}
+            <PhotoLibraryIcon color="action" />
+          </IconButton>
+          <Avatar alt="Remy Sharp" src="https://i.pravatar.cc/300" />
+        </Box>
+      </StyledToolBar>
     </AppBar>
- 
-
-)
+  )
 }
 
-export default NavBar
+export default NavBar;

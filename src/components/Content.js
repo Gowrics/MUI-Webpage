@@ -4,7 +4,7 @@ import Tourcard from './Tourcard'
 
 const Content = () => {
   return (
-    <Box flex={3}> <Tourcard/></Box>
+    <Box flex={2}> <Tourcard/></Box>
   
   )
 }

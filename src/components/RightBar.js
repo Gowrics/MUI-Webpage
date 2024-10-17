@@ -3,8 +3,8 @@ import React from 'react'
 
 const RightBar = () => {
   return (
-    <Box flex={1}>
-            <Box position="fixed">
+    <Box flex={1} sx={{ display: { xs: 'none', sm: 'block' } }}> 
+               <Box position="fixed">
 
         <Typography variant='h5' marginTop={2}>Photo Graphy</Typography>  
     <ImageList sx={{ width: 350, height: 750 }} cols={2} rowHeight={164}>
