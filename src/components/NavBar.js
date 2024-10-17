@@ -2,14 +2,14 @@ import { AppBar, Avatar, Badge, Box, IconButton, styled, Toolbar, Typography } f
 import React from 'react';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary'; // Add the gallery icon
+import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 
 const StyledToolBar = styled(Toolbar)({
   display: 'flex',
   justifyContent: 'space-between'
 });
 
-const NavBar = ({ onGalleryClick }) => { // Accept a prop for handling gallery icon click
+const NavBar = ({ onGalleryClick }) => {
   return (
     <AppBar position='sticky' sx={{ mb: 2 }}>
       <StyledToolBar>
@@ -17,7 +17,7 @@ const NavBar = ({ onGalleryClick }) => { // Accept a prop for handling gallery i
         <Box sx={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
           <Badge badgeContent={4} color="secondary"><MailIcon color="action" /></Badge>
           <Badge badgeContent={4} color="error"><NotificationsActiveIcon color='action' /></Badge>
-          <IconButton onClick={onGalleryClick} sx={{ display: { xs: 'block', sm: 'none' } }}> {/* Show on small screens */}
+          <IconButton onClick={onGalleryClick} sx={{ display: { xs: 'block', sm: 'none' } }}>
             <PhotoLibraryIcon color="action" />
           </IconButton>
           <Avatar alt="Remy Sharp" src="https://i.pravatar.cc/300" />

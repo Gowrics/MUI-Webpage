@@ -25,6 +25,10 @@ function App() {
     setRightBarOpen(prev => !prev);
   };
 
+  const handleGalleryClose = () => {
+    setRightBarOpen(false);
+  };
+
   return (
     <ThemeProvider theme={darktheme}>
       <Box bgcolor={'background.default'} color={'text.primary'}>
@@ -33,7 +37,7 @@ function App() {
           <Stack direction="row" spacing={2} justifyContent={"space-between"}>
             <Menu />
             <Content />
-            <RightBar open={rightBarOpen} /> {/* Pass the open state to RightBar */}
+            <RightBar open={rightBarOpen} handleClose={handleGalleryClose} /> {/* Pass the open state and handleClose to RightBar */}
           </Stack>
         </Container>
       </Box>
