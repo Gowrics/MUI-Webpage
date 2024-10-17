@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MUI-Webpage/static/css/main.5a57a607.css",
-    "main.js": "/MUI-Webpage/static/js/main.4177bf76.js",
+    "main.js": "/MUI-Webpage/static/js/main.a2524e89.js",
     "static/js/453.5fd10b89.chunk.js": "/MUI-Webpage/static/js/453.5fd10b89.chunk.js",
     "static/media/3.jpg": "/MUI-Webpage/static/media/3.3f8bb3d8dd21b1781140.jpg",
     "static/media/1.jpg": "/MUI-Webpage/static/media/1.392e26f86dd513734b3a.jpg",
@@ -11,11 +11,11 @@
     "static/media/6.jpg": "/MUI-Webpage/static/media/6.9f679fa45a3ecce0af94.jpg",
     "index.html": "/MUI-Webpage/index.html",
     "main.5a57a607.css.map": "/MUI-Webpage/static/css/main.5a57a607.css.map",
-    "main.4177bf76.js.map": "/MUI-Webpage/static/js/main.4177bf76.js.map",
+    "main.a2524e89.js.map": "/MUI-Webpage/static/js/main.a2524e89.js.map",
     "453.5fd10b89.chunk.js.map": "/MUI-Webpage/static/js/453.5fd10b89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a57a607.css",
-    "static/js/main.4177bf76.js"
+    "static/js/main.a2524e89.js"
   ]
 }
