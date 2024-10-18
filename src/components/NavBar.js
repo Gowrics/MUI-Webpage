@@ -3,18 +3,22 @@ import React from 'react';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const StyledToolBar = styled(Toolbar)({
   display: 'flex',
   justifyContent: 'space-between'
 });
 
-const NavBar = ({ onGalleryClick }) => {
+const NavBar = ({ handleMenuToggle, onGalleryClick  }) => {
   return (
     <AppBar position='sticky' sx={{ mb: 2 }}>
       <StyledToolBar>
         <Typography variant='h5'>Tours</Typography>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+        <IconButton onClick={handleMenuToggle} sx={{ display: { xs: 'block', sm: 'none' } }}>
+            <MenuIcon color="action" />
+          </IconButton>           
           <Badge badgeContent={4} color="secondary"><MailIcon color="action" /></Badge>
           <Badge badgeContent={4} color="error"><NotificationsActiveIcon color='action' /></Badge>
           <IconButton onClick={onGalleryClick} sx={{ display: { xs: 'block', sm: 'none' } }}>

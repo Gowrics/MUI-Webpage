@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   const [theme, setTheme] = useState('dark');
+  const [menuOpen, setMenuOpen] = useState(false); // State to manage Menu visibility
   const [rightBarOpen, setRightBarOpen] = useState(false); // State to manage RightBar visibility
   const darktheme = createTheme({
     palette: {
@@ -21,6 +22,14 @@ function App() {
     },
   });
 
+  const handleMenuToggle = () => {
+    setMenuOpen(prev => !prev);
+  };
+
+  const handleMenuClose = () => {
+    setMenuOpen(false);
+  };
+
   const handleGalleryClick = () => {
     setRightBarOpen(prev => !prev);
   };
@@ -32,11 +41,11 @@ function App() {
   return (
     <ThemeProvider theme={darktheme}>
       <Box bgcolor={'background.default'} color={'text.primary'}>
-        <NavBar onGalleryClick={handleGalleryClick} /> {/* Pass the handleGalleryClick to NavBar */}
+        <NavBar handleMenuToggle={handleMenuToggle} onGalleryClick={handleGalleryClick} /> {/* Pass the handleGalleryClick to NavBar */}
         <Container maxWidth='xl'>
           <Stack direction="row" spacing={2} justifyContent={"space-between"}>
-            <Menu />
-            <Content />
+          <Menu open={menuOpen} handleClose={handleMenuClose} /> {/* Use menuOpen state here */}
+          <Content />
             <RightBar open={rightBarOpen} handleClose={handleGalleryClose} /> {/* Pass the open state and handleClose to RightBar */}
           </Stack>
         </Container>
