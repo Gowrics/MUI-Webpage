@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/MUI-Webpage/static/css/main.5a57a607.css",
-    "main.js": "/MUI-Webpage/static/js/main.a2524e89.js",
+    "main.js": "/MUI-Webpage/static/js/main.74b69cd9.js",
     "static/js/453.5fd10b89.chunk.js": "/MUI-Webpage/static/js/453.5fd10b89.chunk.js",
     "static/media/3.jpg": "/MUI-Webpage/static/media/3.3f8bb3d8dd21b1781140.jpg",
     "static/media/1.jpg": "/MUI-Webpage/static/media/1.392e26f86dd513734b3a.jpg",
+    "static/media/reptail.jpg": "/MUI-Webpage/static/media/reptail.6e7982cef49e7f3e17e4.jpg",
     "static/media/5.jpg": "/MUI-Webpage/static/media/5.b61cb7081cefe02638a8.jpg",
     "static/media/2.jpg": "/MUI-Webpage/static/media/2.4819b1bdef0f89948916.jpg",
     "static/media/4.jpg": "/MUI-Webpage/static/media/4.c5a7c09f63f90297ec5c.jpg",
     "static/media/6.jpg": "/MUI-Webpage/static/media/6.9f679fa45a3ecce0af94.jpg",
     "index.html": "/MUI-Webpage/index.html",
     "main.5a57a607.css.map": "/MUI-Webpage/static/css/main.5a57a607.css.map",
-    "main.a2524e89.js.map": "/MUI-Webpage/static/js/main.a2524e89.js.map",
+    "main.74b69cd9.js.map": "/MUI-Webpage/static/js/main.74b69cd9.js.map",
     "453.5fd10b89.chunk.js.map": "/MUI-Webpage/static/js/453.5fd10b89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a57a607.css",
-    "static/js/main.a2524e89.js"
+    "static/js/main.74b69cd9.js"
   ]
 }
