@@ -40,7 +40,7 @@ const RightBar = ({ open, handleClose }) => {
           >
             <CloseIcon />
           </IconButton>
-          <Typography variant='h5' marginBottom={2}>Photo Graphy</Typography>
+          <Typography variant='h5' color='white' marginBottom={2}>Photo Graphy</Typography>
           <ImageList sx={{ width: '100%', height: 'auto' }} cols={2} rowHeight={164}>
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
@@ -59,7 +59,7 @@ const RightBar = ({ open, handleClose }) => {
       {/* Always visible on large screens */}
       <Box flex={1} sx={{ display: { xs: 'none', sm: 'block' } }}>
         <Box position="fixed">
-          <Typography variant='h5' marginTop={2}>Photo Graphy</Typography>
+          <Typography variant='h5'  marginTop={2}>Photo Graphy</Typography>
           <ImageList sx={{ width: 350, height: 500 }} cols={2} rowHeight={164}>
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
